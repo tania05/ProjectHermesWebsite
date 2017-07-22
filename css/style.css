@@ -266,14 +266,20 @@ h5 {
     background-position: center;
 /*    background-color: #0097A7;*/
 	background-attachment: scroll;
-/*	background-position: 100% 50%;*/
 }
+
 #description {
 	padding-top: 10px;
 	background-image: url(../images/image3.jpg);
-/*    background-attachment: scroll;*/
 	color: white;
 }
+
+@media (max-width: 960px) {
+    #description {
+        background-attachment: scroll;
+    }
+}
+
 .item i {
 	font-size: 60px;
 }
