@@ -48,6 +48,10 @@ body {
     font-size: 15px;
 }
 
+hr {
+    border-color: #424242
+}
+
 p {
     margin: 0 0 20px 0;
 }
@@ -59,7 +63,7 @@ a {
 	outline: none;
 }
 
-a{
+a {
 	color: #4da7ca;
 	-o-transition: all .4s;
 	-ms-transition: all .4s;
@@ -85,8 +89,8 @@ h5 {
 
 .btn{border-radius: 0;}
 .btn-o {
-	border: 1px solid #3A4F52;
-	color: #3A4F52;
+	border: 1px solid #424242;
+	color: #424242;
 }
 .btn-o:hover {
 	background: #3A4F52;
@@ -254,7 +258,11 @@ h5 {
 #acknowledgements {
 	padding-top: 25px;
 	padding-bottom: 5px;
-	background-color: #EBEBEB;
+	background-color: #F0F0F0;
+}
+
+#acknowledgements h2 {
+    margin: 0;
 }
 
 .block-body {
@@ -262,10 +270,7 @@ h5 {
 }
 
 #header {
-    background-image: url(../images/image2.jpg);
-    background-position: center;
-/*    background-color: #0097A7;*/
-	background-attachment: scroll;
+    background: linear-gradient(150deg, #00BCD4 25%, #0097A7 75%);
 }
 
 #description {
@@ -283,11 +288,12 @@ h5 {
 .item i {
 	font-size: 60px;
 }
+
 .item {
 	padding: 0 25px;
 }
 
-#description h1, #description h2{
+#description h1, #description h2 {
 	color: white;
 }
 
@@ -310,10 +316,13 @@ h5 {
 	}
 }
 
-#footer{
+#footer {
 	background: #0097A7;
 	color: #212121;
+    padding-top: 25px;
+    color: white;
 }
+
 #footer h3{
 	color: #212121;
 }
@@ -321,19 +330,48 @@ h5 {
 .footer-text-container {
 	padding-top: 35px;
 }
+
 .footer-text a {
 	color: #212121;
 }
 
 #footer .fa-gitlab, #footer .fa-android {
 	font-size: 50px;
-    margin-right: 40px;
+    margin-right: 60px;
     color: white;
     opacity: 0.7;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #footer .fa-gitlab:hover, #footer .fa-android:hover {
     opacity: 1;
+}
+
+#footer h3 {
+    color: white;
+    margin: 0;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul a {
+    color: white;
+    opacity: 0.7;
+    padding: 0;
+}
+
+#footer ul a:hover {
+    opacity: 1;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
 
 /* Modal */
