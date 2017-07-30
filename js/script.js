@@ -26,12 +26,20 @@
 
 	$wrapper = $('#wrapper');
     
+    function min(a, b) {
+        if(a < b) {
+            return a;
+        }
+        return b;
+    }
+    
     function isMobile() {
         return jQuery(window).width() < 960;
     }
 
 	function setHomeBannerHeight() {
 		var windowHeight = jQuery(window).height();
+        console.log("HEIGHT: " + windowHeight);
 		jQuery('#header').height(windowHeight);
 	}
 
@@ -75,13 +83,11 @@
 
 	//Resize events
     
-    if (!isMobile()) {
-        jQuery(window).smartresize(function(){
-            setHomeBannerHeight();
-            centerHomeBannerText();
-            setHeaderBackground();
-	   });
-    }
+    jQuery(window).smartresize(function(){
+        setHomeBannerHeight();
+        centerHomeBannerText();
+        setHeaderBackground();
+   });
     
     jQuery('.nav-dropdown .nav-dropdown-items a').click(function(e) {
         e.stopPropagation();

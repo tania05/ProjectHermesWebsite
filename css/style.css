@@ -199,7 +199,7 @@ h5 {
 	line-height: 1em;
 	font-family: 'Quattrocento';
 	color: white;
-    z-index: 1;
+    z-index: 2;
 }
 @media (min-width: 992px) {
 	#header .slogan{
@@ -214,9 +214,19 @@ h5 {
 
 #header .secondary-slogan{
 	font-size: 1.6em;
-	color: rgba(255,255,255,.7);
+	color: rgba(255,255,255,1);
 	line-height: 1em;
 	font-family: 'Alegreya SC';
+}
+
+.center {
+    display: inline-block;
+}
+
+.box {
+    background-color: #0097A7;
+    opacity: 0.7;
+    padding: 20px;
 }
 
 #header > .bottom {
@@ -258,7 +268,7 @@ h5 {
 #acknowledgements {
 	padding-top: 25px;
 	padding-bottom: 5px;
-	background-color: #F0F0F0;
+/*	background-color: #F0F0F0;*/
 }
 
 #acknowledgements h2 {
@@ -270,7 +280,26 @@ h5 {
 }
 
 #header {
-    background: linear-gradient(150deg, #00BCD4 25%, #0097A7 75%);
+/*    background: (45deg, #00BCD4 , #0097A7 , url(./images/background.jpg));*/
+	background:
+/*        linear-gradient(rgba(177,202,188,0.25), rgba(177,202,188,0.25)),*/
+        url(../images/background.jpg);
+    background-position: center;
+/*    width: 100%;*/
+/*    height:100%;*/
+    background-attachment: scroll;
+/*    z-index: 0;*/
+    background-size: cover;
+
+
+}
+
+.header-overlay {
+/*    position: absolute;*/
+/*    background: linear-gradient(150deg, rgba(0,188,212,0.1) 25%, rgba(0,151,167,0.1) 75%);*/
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 #description {
@@ -295,6 +324,10 @@ h5 {
 
 #description h1, #description h2 {
 	color: white;
+}
+
+#team {
+    background-color: #F0F0F0;
 }
 
 .team-member-image {
@@ -398,4 +431,22 @@ h5 {
 
 #us {
 	display: none;
+}
+
+/*
+.heading-align {
+    text-align: center;
+}
+
+@media (max-width: 960px) {
+    .heading-align {
+        text-align: left;
+    }
+}*/
+
+.how-to-image {
+    display: block;
+    margin: auto;
+    top: 0;
+/*    width: 100%;*/
 }
